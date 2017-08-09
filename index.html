@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type='text/javascript' src='js/jQuery.js'></script>
+        <script src="js/app.js"></script>
+        <script type='text/javascript' src='js/knockout-3.4.2.js'></script>
+
+    </head>
+    <body>
+
+
+        <div class="container">
+        <button data-bind="click: toggle" class="toggle">Show/Hide Menu</button>
+            <div class="options-box" data-bind="visible: isVisible" id="menu">
+                <h1>Find A Course</h1>
+                <div>
+                    <input type="text" placeholder="Search for a course" id="searchBox" data-bind="textInput: $data.courseSearch">
+                </div>
+                <ul data-bind="foreach: courseList().sort(function (left, right) {return left.title() == right.title() ? 0 : (left.title() < right.title() ? -1 : 1) })">
+                    <li data-bind="text: $data.title(), click: $parent.centerCourse, visible: $data.isFiltered()"></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div id="map"></div>
+
+
+
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyCLl7MFXys8wD2Xesq0uu4o6YrvvAG9Fy8&v=3&callback=initMap">
+    </script>
+
+    </body>
+</html>
