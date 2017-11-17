@@ -11,6 +11,7 @@ var courses = [
     {title: 'Helleyer DGC', location: {lat: 37.2810901, lng: -121.8077479}, city: "San_Jose"},
     {title: 'Black Mouse', location: {lat: 37.0633611, lng: -122.0860058}, city: "Aptos"},
     {title: 'DeLaveaga DGC', location: {lat: 37.0052987, lng: -121.9982765}, city: "Santa_Cruz"},
+    {title: 'UC Santa Cruz', location: {lat: 36.994260, lng: -122.053233}, city: "Santa_Cruz"},
     {title: 'Emerald Hills', location: {lat: 37.4537762, lng: -122.2665137}, city: "Redwood_City"},
     {title: 'Gleneagles', location: {lat: 37.712421, lng: -122.424261}, city: "San_Francisco"},
     {title: 'Chabot Park', location: {lat: 37.7155783, lng: -122.1026621}, city: "San_Leandro"},
