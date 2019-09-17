@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <script type='text/javascript' src='js/jQuery.js'></script>
-        <script src="js/app.js"></script>
-        <script type='text/javascript' src='js/knockout-3.4.2.js'></script>
 
     </head>
     <body>
@@ -27,11 +25,14 @@
         <div id="map"></div>
 
 
+    <script type='text/javascript' src='js/jQuery.js'></script>
+    <script src="js/app.js"></script>
+    <script type='text/javascript' src='js/knockout-3.4.2.js'></script>
 
 
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyCLl7MFXys8wD2Xesq0uu4o6YrvvAG9Fy8&v=3&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry,drawing&key=AIzaSyC32f4sqI-FKYnCzqagfL_fHKslr3t0o6s&v=3&callback=initMap" onerror="mapError()">
     </script>
 
     </body>
-</html>
+</html>  
